@@ -5,10 +5,9 @@ import { Section, SectionTitle, Address, Contact } from 'components';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import * as s from './Contacts.module.css';
 
-const Map = loadable(() => import('components/Map/Map'));
-const Form = loadable(() => import('components/Form/Form'));
-
 const Contacts = () => {
+  const Map = loadable(() => import('components/Map/Map'));
+  const Form = loadable(() => import('components/Form/Form'));
   const { i18n } = useTranslation();
 
   const {
