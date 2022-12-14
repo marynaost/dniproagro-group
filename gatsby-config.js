@@ -89,22 +89,22 @@ module.exports = {
     },
     `gatsby-plugin-root-import`,
     `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-omni-font-loader`,
-      options: {
-        enableListener: true,
-        preconnect: [
-          `https://fonts.googleapis.com`,
-          `https://fonts.gstatic.com`,
-        ],
-        web: [
-          {
-            name: `Mulish`,
-            file: `https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap`,
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-omni-font-loader`,
+    //   options: {
+    //     enableListener: true,
+    //     preconnect: [
+    //       `https://fonts.googleapis.com`,
+    //       `https://fonts.gstatic.com`,
+    //     ],
+    //     web: [
+    //       {
+    //         name: `Mulish`,
+    //         file: `https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap`,
+    //       },
+    //     ],
+    //   },
+    // },
     // {
     //   resolve: `gatsby-plugin-google-fonts`,
     //   options: {
