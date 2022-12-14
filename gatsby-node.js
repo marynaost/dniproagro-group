@@ -1,5 +1,4 @@
 const { createFilePath } = require(`gatsby-source-filesystem`);
-const LoadablePlugin = require('@loadable/webpack-plugin');
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
@@ -11,10 +10,4 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: slug,
     });
   }
-};
-
-exports.onCreateWebpackConfig = ({ actions, plugins }) => {
-  actions.setWebpackConfig({
-    plugins: [new LoadablePlugin()],
-  });
 };
